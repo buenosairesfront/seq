@@ -1,0 +1,1097 @@
+{
+  "app": "seq",
+  "kind": "pattern",
+  "version": 1,
+  "bpm": 118,
+  "swing": 0,
+  "root": 2,
+  "scale": "dorian",
+  "scaleSteps": [
+    0,
+    2,
+    3,
+    5,
+    7,
+    9,
+    10
+  ],
+  "slot": "A1",
+  "pattern": {
+    "name": "demo",
+    "used": true,
+    "v": {
+      "A": {
+        "tracks": [
+          {
+            "id": "sa2im1d",
+            "name": "LEAD",
+            "sound": "pluck",
+            "oct": 4,
+            "len": 16,
+            "dir": "fwd",
+            "div": "1/16",
+            "ch": 1,
+            "mute": false,
+            "solo": false,
+            "level": 0.8,
+            "eu": {
+              "k": 4,
+              "rot": 0
+            },
+            "mods": [
+              {
+                "cc": 74,
+                "on": true,
+                "pts": [
+                  {
+                    "x": 0,
+                    "y": 0.3
+                  },
+                  {
+                    "x": 0.5,
+                    "y": 0.8
+                  },
+                  {
+                    "x": 1,
+                    "y": 0.3
+                  }
+                ]
+              },
+              {
+                "cc": 71,
+                "on": false,
+                "pts": [
+                  {
+                    "x": 0,
+                    "y": 0.2
+                  },
+                  {
+                    "x": 1,
+                    "y": 0.2
+                  }
+                ]
+              }
+            ],
+            "steps": [
+              {
+                "on": true,
+                "deg": 0,
+                "vel": 70,
+                "gate": 0.35,
+                "prob": 100,
+                "ratch": 1,
+                "micro": 0,
+                "slide": false,
+                "tie": false,
+                "chord": [],
+                "arp": "off",
+                "cond": "",
+                "lock": false,
+                "pl": {}
+              },
+              {
+                "on": false,
+                "deg": 2,
+                "vel": 107,
+                "gate": 0.6499999999999999,
+                "prob": 100,
+                "ratch": 1,
+                "micro": 0,
+                "slide": false,
+                "tie": false,
+                "chord": [],
+                "arp": "off",
+                "cond": "",
+                "lock": false,
+                "pl": {}
+              },
+              {
+                "on": true,
+                "deg": 4,
+                "vel": 94,
+                "gate": 0.44999999999999996,
+                "prob": 100,
+                "ratch": 1,
+                "micro": 0,
+                "slide": false,
+                "tie": false,
+                "chord": [],
+                "arp": "off",
+                "cond": "",
+                "lock": false,
+                "pl": {}
+              },
+              {
+                "on": true,
+                "deg": 7,
+                "vel": 81,
+                "gate": 0.75,
+                "prob": 60,
+                "ratch": 1,
+                "micro": 0,
+                "slide": false,
+                "tie": false,
+                "chord": [],
+                "arp": "off",
+                "cond": "",
+                "lock": false,
+                "pl": {}
+              },
+              {
+                "on": false,
+                "deg": 4,
+                "vel": 118,
+                "gate": 0.55,
+                "prob": 100,
+                "ratch": 1,
+                "micro": 0,
+                "slide": false,
+                "tie": false,
+                "chord": [],
+                "arp": "off",
+                "cond": "",
+                "lock": false,
+                "pl": {}
+              },
+              {
+                "on": true,
+                "deg": 2,
+                "vel": 105,
+                "gate": 0.35,
+                "prob": 100,
+                "ratch": 1,
+                "micro": 0,
+                "slide": false,
+                "tie": false,
+                "chord": [],
+                "arp": "off",
+                "cond": "",
+                "lock": false,
+                "pl": {}
+              },
+              {
+                "on": true,
+                "deg": 5,
+                "vel": 92,
+                "gate": 0.6499999999999999,
+                "prob": 100,
+                "ratch": 1,
+                "micro": 0,
+                "slide": false,
+                "tie": false,
+                "chord": [],
+                "arp": "off",
+                "cond": "",
+                "lock": false,
+                "pl": {}
+              },
+              {
+                "on": false,
+                "deg": 4,
+                "vel": 79,
+                "gate": 0.44999999999999996,
+                "prob": 100,
+                "ratch": 3,
+                "micro": 0,
+                "slide": false,
+                "tie": false,
+                "chord": [],
+                "arp": "off",
+                "cond": "",
+                "lock": false,
+                "pl": {}
+              },
+              {
+                "on": true,
+                "deg": 0,
+                "vel": 116,
+                "gate": 0.75,
+                "prob": 60,
+                "ratch": 1,
+                "micro": 0,
+                "slide": false,
+                "tie": false,
+                "chord": [],
+                "arp": "off",
+                "cond": "",
+                "lock": false,
+                "pl": {}
+              },
+              {
+                "on": false,
+                "deg": 2,
+                "vel": 103,
+                "gate": 0.55,
+                "prob": 100,
+                "ratch": 1,
+                "micro": 0,
+                "slide": false,
+                "tie": false,
+                "chord": [],
+                "arp": "off",
+                "cond": "",
+                "lock": false,
+                "pl": {}
+              },
+              {
+                "on": true,
+                "deg": 4,
+                "vel": 90,
+                "gate": 0.35,
+                "prob": 100,
+                "ratch": 1,
+                "micro": 0,
+                "slide": false,
+                "tie": false,
+                "chord": [],
+                "arp": "off",
+                "cond": "",
+                "lock": false,
+                "pl": {}
+              },
+              {
+                "on": true,
+                "deg": 9,
+                "vel": 77,
+                "gate": 0.6499999999999999,
+                "prob": 100,
+                "ratch": 1,
+                "micro": 0,
+                "slide": false,
+                "tie": false,
+                "chord": [],
+                "arp": "off",
+                "cond": "1:2",
+                "lock": false,
+                "pl": {}
+              },
+              {
+                "on": false,
+                "deg": 7,
+                "vel": 114,
+                "gate": 0.44999999999999996,
+                "prob": 100,
+                "ratch": 1,
+                "micro": 0,
+                "slide": false,
+                "tie": false,
+                "chord": [],
+                "arp": "off",
+                "cond": "",
+                "lock": false,
+                "pl": {}
+              },
+              {
+                "on": true,
+                "deg": 4,
+                "vel": 101,
+                "gate": 0.75,
+                "prob": 60,
+                "ratch": 1,
+                "micro": 0,
+                "slide": false,
+                "tie": false,
+                "chord": [],
+                "arp": "off",
+                "cond": "",
+                "lock": false,
+                "pl": {}
+              },
+              {
+                "on": false,
+                "deg": 2,
+                "vel": 88,
+                "gate": 0.55,
+                "prob": 100,
+                "ratch": 1,
+                "micro": 0,
+                "slide": false,
+                "tie": false,
+                "chord": [],
+                "arp": "off",
+                "cond": "",
+                "lock": false,
+                "pl": {}
+              },
+              {
+                "on": true,
+                "deg": 1,
+                "vel": 75,
+                "gate": 0.35,
+                "prob": 100,
+                "ratch": 1,
+                "micro": 0,
+                "slide": false,
+                "tie": false,
+                "chord": [],
+                "arp": "off",
+                "cond": "fill",
+                "lock": false,
+                "pl": {}
+              }
+            ]
+          },
+          {
+            "id": "hgxwp0z",
+            "name": "BASS",
+            "sound": "acid",
+            "oct": 2,
+            "len": 13,
+            "dir": "fwd",
+            "div": "1/16",
+            "ch": 2,
+            "mute": false,
+            "solo": false,
+            "level": 0.8,
+            "eu": {
+              "k": 4,
+              "rot": 0
+            },
+            "mods": [
+              {
+                "cc": 74,
+                "on": false,
+                "pts": [
+                  {
+                    "x": 0,
+                    "y": 0.3
+                  },
+                  {
+                    "x": 0.5,
+                    "y": 0.8
+                  },
+                  {
+                    "x": 1,
+                    "y": 0.3
+                  }
+                ]
+              },
+              {
+                "cc": 71,
+                "on": false,
+                "pts": [
+                  {
+                    "x": 0,
+                    "y": 0.2
+                  },
+                  {
+                    "x": 1,
+                    "y": 0.2
+                  }
+                ]
+              }
+            ],
+            "steps": [
+              {
+                "on": true,
+                "deg": 0,
+                "vel": 120,
+                "gate": 0.6,
+                "prob": 100,
+                "ratch": 1,
+                "micro": 0,
+                "slide": false,
+                "tie": false,
+                "chord": [],
+                "arp": "off",
+                "cond": "",
+                "lock": false,
+                "pl": {}
+              },
+              {
+                "on": false,
+                "deg": 0,
+                "vel": 88,
+                "gate": 0.6,
+                "prob": 100,
+                "ratch": 1,
+                "micro": 0,
+                "slide": false,
+                "tie": false,
+                "chord": [],
+                "arp": "off",
+                "cond": "",
+                "lock": false,
+                "pl": {}
+              },
+              {
+                "on": true,
+                "deg": 7,
+                "vel": 88,
+                "gate": 0.6,
+                "prob": 100,
+                "ratch": 1,
+                "micro": 0,
+                "slide": true,
+                "tie": false,
+                "chord": [],
+                "arp": "off",
+                "cond": "",
+                "lock": false,
+                "pl": {}
+              },
+              {
+                "on": true,
+                "deg": 0,
+                "vel": 88,
+                "gate": 0.6,
+                "prob": 100,
+                "ratch": 1,
+                "micro": 0,
+                "slide": false,
+                "tie": false,
+                "chord": [],
+                "arp": "off",
+                "cond": "",
+                "lock": false,
+                "pl": {}
+              },
+              {
+                "on": false,
+                "deg": 3,
+                "vel": 120,
+                "gate": 0.6,
+                "prob": 100,
+                "ratch": 1,
+                "micro": 0,
+                "slide": false,
+                "tie": false,
+                "chord": [],
+                "arp": "off",
+                "cond": "",
+                "lock": false,
+                "pl": {}
+              },
+              {
+                "on": true,
+                "deg": 0,
+                "vel": 88,
+                "gate": 0.6,
+                "prob": 100,
+                "ratch": 1,
+                "micro": 0,
+                "slide": false,
+                "tie": false,
+                "chord": [],
+                "arp": "off",
+                "cond": "",
+                "lock": false,
+                "pl": {}
+              },
+              {
+                "on": true,
+                "deg": 0,
+                "vel": 88,
+                "gate": 0.6,
+                "prob": 100,
+                "ratch": 1,
+                "micro": 0,
+                "slide": false,
+                "tie": false,
+                "chord": [],
+                "arp": "off",
+                "cond": "",
+                "lock": false,
+                "pl": {}
+              },
+              {
+                "on": false,
+                "deg": 5,
+                "vel": 88,
+                "gate": 0.6,
+                "prob": 100,
+                "ratch": 1,
+                "micro": 0,
+                "slide": false,
+                "tie": false,
+                "chord": [],
+                "arp": "off",
+                "cond": "",
+                "lock": false,
+                "pl": {}
+              },
+              {
+                "on": true,
+                "deg": 0,
+                "vel": 120,
+                "gate": 0.6,
+                "prob": 100,
+                "ratch": 1,
+                "micro": 0,
+                "slide": false,
+                "tie": false,
+                "chord": [],
+                "arp": "off",
+                "cond": "",
+                "lock": false,
+                "pl": {}
+              },
+              {
+                "on": true,
+                "deg": 7,
+                "vel": 88,
+                "gate": 0.6,
+                "prob": 100,
+                "ratch": 1,
+                "micro": 0,
+                "slide": true,
+                "tie": false,
+                "chord": [],
+                "arp": "off",
+                "cond": "",
+                "lock": false,
+                "pl": {}
+              },
+              {
+                "on": false,
+                "deg": 4,
+                "vel": 88,
+                "gate": 0.6,
+                "prob": 100,
+                "ratch": 1,
+                "micro": 0,
+                "slide": false,
+                "tie": false,
+                "chord": [],
+                "arp": "off",
+                "cond": "",
+                "lock": false,
+                "pl": {}
+              },
+              {
+                "on": true,
+                "deg": 0,
+                "vel": 88,
+                "gate": 0.6,
+                "prob": 100,
+                "ratch": 1,
+                "micro": 0,
+                "slide": false,
+                "tie": false,
+                "chord": [],
+                "arp": "off",
+                "cond": "",
+                "lock": false,
+                "pl": {}
+              },
+              {
+                "on": true,
+                "deg": 2,
+                "vel": 120,
+                "gate": 0.6,
+                "prob": 100,
+                "ratch": 1,
+                "micro": 0,
+                "slide": false,
+                "tie": false,
+                "chord": [],
+                "arp": "off",
+                "cond": "",
+                "lock": false,
+                "pl": {}
+              }
+            ]
+          },
+          {
+            "id": "d52e3ky",
+            "name": "CHORD",
+            "sound": "pad",
+            "oct": 3,
+            "len": 7,
+            "dir": "fwd",
+            "div": "1/8",
+            "ch": 3,
+            "mute": false,
+            "solo": false,
+            "level": 0.8,
+            "eu": {
+              "k": 4,
+              "rot": 0
+            },
+            "mods": [
+              {
+                "cc": 74,
+                "on": false,
+                "pts": [
+                  {
+                    "x": 0,
+                    "y": 0.3
+                  },
+                  {
+                    "x": 0.5,
+                    "y": 0.8
+                  },
+                  {
+                    "x": 1,
+                    "y": 0.3
+                  }
+                ]
+              },
+              {
+                "cc": 71,
+                "on": false,
+                "pts": [
+                  {
+                    "x": 0,
+                    "y": 0.2
+                  },
+                  {
+                    "x": 1,
+                    "y": 0.2
+                  }
+                ]
+              }
+            ],
+            "steps": [
+              {
+                "on": true,
+                "deg": 0,
+                "vel": 72,
+                "gate": 1.8,
+                "prob": 100,
+                "ratch": 1,
+                "micro": 0,
+                "slide": false,
+                "tie": false,
+                "chord": [
+                  2,
+                  4
+                ],
+                "arp": "off",
+                "cond": "",
+                "lock": false,
+                "pl": {}
+              },
+              {
+                "on": false,
+                "deg": 0,
+                "vel": 100,
+                "gate": 0.5,
+                "prob": 100,
+                "ratch": 1,
+                "micro": 0,
+                "slide": false,
+                "tie": false,
+                "chord": [],
+                "arp": "off",
+                "cond": "",
+                "lock": false,
+                "pl": {}
+              },
+              {
+                "on": true,
+                "deg": 3,
+                "vel": 72,
+                "gate": 1.8,
+                "prob": 100,
+                "ratch": 1,
+                "micro": 0,
+                "slide": false,
+                "tie": false,
+                "chord": [
+                  2,
+                  4
+                ],
+                "arp": "off",
+                "cond": "",
+                "lock": false,
+                "pl": {}
+              },
+              {
+                "on": false,
+                "deg": 0,
+                "vel": 100,
+                "gate": 0.5,
+                "prob": 100,
+                "ratch": 1,
+                "micro": 0,
+                "slide": false,
+                "tie": false,
+                "chord": [],
+                "arp": "off",
+                "cond": "",
+                "lock": false,
+                "pl": {}
+              },
+              {
+                "on": true,
+                "deg": 4,
+                "vel": 72,
+                "gate": 1.8,
+                "prob": 100,
+                "ratch": 4,
+                "micro": 0,
+                "slide": false,
+                "tie": false,
+                "chord": [
+                  2,
+                  4
+                ],
+                "arp": "up",
+                "cond": "",
+                "lock": false,
+                "pl": {}
+              },
+              {
+                "on": false,
+                "deg": 0,
+                "vel": 100,
+                "gate": 0.5,
+                "prob": 100,
+                "ratch": 1,
+                "micro": 0,
+                "slide": false,
+                "tie": false,
+                "chord": [],
+                "arp": "off",
+                "cond": "",
+                "lock": false,
+                "pl": {}
+              },
+              {
+                "on": false,
+                "deg": 0,
+                "vel": 100,
+                "gate": 0.5,
+                "prob": 100,
+                "ratch": 1,
+                "micro": 0,
+                "slide": false,
+                "tie": false,
+                "chord": [],
+                "arp": "off",
+                "cond": "",
+                "lock": false,
+                "pl": {}
+              }
+            ]
+          },
+          {
+            "id": "2vvf4ra",
+            "name": "DRUM",
+            "sound": "drums",
+            "oct": 0,
+            "len": 16,
+            "dir": "fwd",
+            "div": "1/16",
+            "ch": 4,
+            "mute": false,
+            "solo": false,
+            "level": 0.8,
+            "eu": {
+              "k": 4,
+              "rot": 0
+            },
+            "mods": [
+              {
+                "cc": 74,
+                "on": false,
+                "pts": [
+                  {
+                    "x": 0,
+                    "y": 0.3
+                  },
+                  {
+                    "x": 0.5,
+                    "y": 0.8
+                  },
+                  {
+                    "x": 1,
+                    "y": 0.3
+                  }
+                ]
+              },
+              {
+                "cc": 71,
+                "on": false,
+                "pts": [
+                  {
+                    "x": 0,
+                    "y": 0.2
+                  },
+                  {
+                    "x": 1,
+                    "y": 0.2
+                  }
+                ]
+              }
+            ],
+            "steps": [
+              {
+                "on": true,
+                "deg": 0,
+                "vel": 118,
+                "gate": 0.25,
+                "prob": 100,
+                "ratch": 1,
+                "micro": 0,
+                "slide": false,
+                "tie": false,
+                "chord": [
+                  2
+                ],
+                "arp": "off",
+                "cond": "",
+                "lock": false,
+                "pl": {}
+              },
+              {
+                "on": false,
+                "deg": 0,
+                "vel": 100,
+                "gate": 0.5,
+                "prob": 100,
+                "ratch": 1,
+                "micro": 0,
+                "slide": false,
+                "tie": false,
+                "chord": [],
+                "arp": "off",
+                "cond": "",
+                "lock": false,
+                "pl": {}
+              },
+              {
+                "on": true,
+                "deg": 2,
+                "vel": 84,
+                "gate": 0.25,
+                "prob": 100,
+                "ratch": 1,
+                "micro": 0,
+                "slide": false,
+                "tie": false,
+                "chord": [],
+                "arp": "off",
+                "cond": "",
+                "lock": false,
+                "pl": {}
+              },
+              {
+                "on": false,
+                "deg": 0,
+                "vel": 100,
+                "gate": 0.5,
+                "prob": 100,
+                "ratch": 1,
+                "micro": 0,
+                "slide": false,
+                "tie": false,
+                "chord": [],
+                "arp": "off",
+                "cond": "",
+                "lock": false,
+                "pl": {}
+              },
+              {
+                "on": true,
+                "deg": 0,
+                "vel": 118,
+                "gate": 0.25,
+                "prob": 100,
+                "ratch": 1,
+                "micro": 0,
+                "slide": false,
+                "tie": false,
+                "chord": [
+                  1,
+                  2
+                ],
+                "arp": "off",
+                "cond": "",
+                "lock": false,
+                "pl": {}
+              },
+              {
+                "on": false,
+                "deg": 0,
+                "vel": 100,
+                "gate": 0.5,
+                "prob": 100,
+                "ratch": 1,
+                "micro": 0,
+                "slide": false,
+                "tie": false,
+                "chord": [],
+                "arp": "off",
+                "cond": "",
+                "lock": false,
+                "pl": {}
+              },
+              {
+                "on": true,
+                "deg": 2,
+                "vel": 84,
+                "gate": 0.25,
+                "prob": 100,
+                "ratch": 1,
+                "micro": 0,
+                "slide": false,
+                "tie": false,
+                "chord": [],
+                "arp": "off",
+                "cond": "",
+                "lock": false,
+                "pl": {}
+              },
+              {
+                "on": true,
+                "deg": 3,
+                "vel": 84,
+                "gate": 0.25,
+                "prob": 100,
+                "ratch": 1,
+                "micro": 0,
+                "slide": false,
+                "tie": false,
+                "chord": [],
+                "arp": "off",
+                "cond": "",
+                "lock": false,
+                "pl": {}
+              },
+              {
+                "on": true,
+                "deg": 0,
+                "vel": 118,
+                "gate": 0.25,
+                "prob": 100,
+                "ratch": 1,
+                "micro": 0,
+                "slide": false,
+                "tie": false,
+                "chord": [
+                  2
+                ],
+                "arp": "off",
+                "cond": "",
+                "lock": false,
+                "pl": {}
+              },
+              {
+                "on": false,
+                "deg": 0,
+                "vel": 100,
+                "gate": 0.5,
+                "prob": 100,
+                "ratch": 1,
+                "micro": 0,
+                "slide": false,
+                "tie": false,
+                "chord": [],
+                "arp": "off",
+                "cond": "",
+                "lock": false,
+                "pl": {}
+              },
+              {
+                "on": true,
+                "deg": 0,
+                "vel": 84,
+                "gate": 0.25,
+                "prob": 100,
+                "ratch": 1,
+                "micro": 0,
+                "slide": false,
+                "tie": false,
+                "chord": [
+                  2
+                ],
+                "arp": "off",
+                "cond": "",
+                "lock": false,
+                "pl": {}
+              },
+              {
+                "on": false,
+                "deg": 0,
+                "vel": 100,
+                "gate": 0.5,
+                "prob": 100,
+                "ratch": 1,
+                "micro": 0,
+                "slide": false,
+                "tie": false,
+                "chord": [],
+                "arp": "off",
+                "cond": "",
+                "lock": false,
+                "pl": {}
+              },
+              {
+                "on": true,
+                "deg": 0,
+                "vel": 118,
+                "gate": 0.25,
+                "prob": 100,
+                "ratch": 1,
+                "micro": 0,
+                "slide": false,
+                "tie": false,
+                "chord": [
+                  1,
+                  2
+                ],
+                "arp": "off",
+                "cond": "",
+                "lock": false,
+                "pl": {}
+              },
+              {
+                "on": true,
+                "deg": 2,
+                "vel": 100,
+                "gate": 0.5,
+                "prob": 45,
+                "ratch": 1,
+                "micro": 0,
+                "slide": false,
+                "tie": false,
+                "chord": [],
+                "arp": "off",
+                "cond": "",
+                "lock": false,
+                "pl": {}
+              },
+              {
+                "on": true,
+                "deg": 2,
+                "vel": 84,
+                "gate": 0.25,
+                "prob": 100,
+                "ratch": 2,
+                "micro": 0,
+                "slide": false,
+                "tie": false,
+                "chord": [],
+                "arp": "off",
+                "cond": "",
+                "lock": false,
+                "pl": {}
+              },
+              {
+                "on": true,
+                "deg": 3,
+                "vel": 84,
+                "gate": 0.25,
+                "prob": 100,
+                "ratch": 1,
+                "micro": 0,
+                "slide": false,
+                "tie": false,
+                "chord": [],
+                "arp": "off",
+                "cond": "",
+                "lock": false,
+                "pl": {}
+              }
+            ]
+          }
+        ],
+        "bars": 1
+      },
+      "B": null
+    },
+    "cur": "A"
+  }
+}

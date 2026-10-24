@@ -1,0 +1,22 @@
+{
+ "id": "seq",
+ "titulo": "Seq",
+ "serie": "U-MA / Tool 04",
+ "descripcion": "Secuenciador para probar secuencias: mutación con memoria, árbol de versiones, polirritmos y exportación a MIDI, JSON y Lua para norns.",
+ "titulos": {
+  "es": "Secuenciador para probar secuencias: mutación con memoria y árbol de versiones.",
+  "en": "A sequencer for trying out sequences: mutation with memory and a version tree.",
+  "de": "Ein Sequencer zum Ausprobieren von Sequenzen: Mutation mit Gedächtnis und Versionsbaum.",
+  "ja": "シーケンスを試すためのシーケンサー：記憶のある変異とバージョンの木。",
+  "hi": "सीक्वेंस आज़माने के लिए सीक्वेंसर: स्मृति के साथ म्यूटेशन और संस्करणों का पेड़।",
+  "zh": "用来试验音序的音序器：有记忆的变异与版本树。"
+ },
+ "url": "https://buenosairesfront.github.io/seq/",
+ "repo": "https://github.com/buenosairesfront/seq",
+ "licencia": "GPL-3.0",
+ "imagen": "https://buenosairesfront.github.io/seq/docs/captura.png",
+ "icono": "https://buenosairesfront.github.io/seq/favicon.svg",
+ "etiquetas": ["secuenciador", "MIDI", "norns", "generativo", "polirritmos", "web audio"],
+ "idiomas": ["es", "en", "de", "ja", "hi", "zh"],
+ "colores": { "fondo": "#000000", "acento": "#E3337E", "secundario": "#23B5DC", "terciario": "#E8C42A" }
+}

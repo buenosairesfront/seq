@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Seq · U-MA</title>
+<meta name="description" content="Seq: secuenciador para probar secuencias — mutación con memoria, árbol de versiones, escalas por grados, euclidiano, polirritmos y exportación a MIDI, JSON y Lua para norns.">
+<meta name="theme-color" content="#000000">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Buenos Aires Front">
+<meta property="og:title" content="Seq / U-MA">
+<meta property="og:description" content="Secuenciador para probar secuencias: mutación con memoria, árbol de versiones, polirritmos y exportación a MIDI, JSON y Lua para norns.">
+<meta property="og:url" content="https://buenosairesfront.github.io/seq/">
+<meta property="og:image" content="https://buenosairesfront.github.io/seq/docs/captura.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&text=%E3%82%B5%E3%82%A6%E3%83%B3%E3%83%89&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/seq.css">
+</head>
+<body>
+<div class="app" id="app">
+
+<header class="top">
+  <div class="logo" aria-label="U-MA サウンド">
+      <svg viewBox="84 86 868 528" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="umBr" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8d8e90"/><stop offset=".14" stop-color="#cfd0d1"/><stop offset=".3" stop-color="#a2a3a5"/><stop offset=".52" stop-color="#dcdddd"/><stop offset=".7" stop-color="#abacae"/><stop offset=".86" stop-color="#d2d3d4"/><stop offset="1" stop-color="#96979a"/></linearGradient>
+          <linearGradient id="umBrV" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#dcdddd"/><stop offset=".45" stop-color="#a7a8aa"/><stop offset="1" stop-color="#c6c7c8"/></linearGradient>
+          <linearGradient id="umFace" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3f3f2"/><stop offset="1" stop-color="#d8d8d6"/></linearGradient>
+          <linearGradient id="umLet" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2e2e2f"/><stop offset="1" stop-color="#0b0b0b"/></linearGradient>
+          <linearGradient id="umM" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e4589a"/><stop offset=".5" stop-color="#c2185b"/><stop offset="1" stop-color="#8f1043"/></linearGradient>
+          <linearGradient id="umC" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#63cbe9"/><stop offset=".5" stop-color="#1fa3c7"/><stop offset="1" stop-color="#127996"/></linearGradient>
+          <linearGradient id="umY" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f2da6a"/><stop offset=".5" stop-color="#d6b21e"/><stop offset="1" stop-color="#a88a12"/></linearGradient>
+        </defs>
+        <path d="M150 96L95 160V604L150 556Z" fill="url(#umBrV)" stroke="#111" stroke-width="9" stroke-linejoin="round"/>
+        <path d="M150 556L95 604H906L944 556Z" fill="url(#umBr)" stroke="#111" stroke-width="9" stroke-linejoin="round"/>
+        <g stroke="#fff" stroke-opacity=".35" stroke-width="2"><path d="M120 588H900"/><path d="M112 596H890"/><path d="M110 200V570"/><path d="M122 186V560"/></g>
+        <rect x="150" y="96" width="794" height="460" rx="8" fill="url(#umFace)" stroke="#111" stroke-width="11"/>
+        <rect x="164" y="110" width="766" height="318" fill="#ecebe9" stroke="#111" stroke-width="3"/>
+        <path d="M156 435H938" stroke="#111" stroke-width="8"/>
+        <g transform="translate(72,33) scale(10.8,10.2)" fill-rule="evenodd">
+          <g fill="#a3a3a1" transform="translate(.35,.35)"><path d="M16 9h5v23h4V9h5v28H16Z"/><path d="M32 21h7v4h-7Z"/><path d="M41 9h5l3 8 3-8h5v28h-5V19l-3 8-3-8v18h-5Z"/><path d="M60 37V13l4-4h6l4 4v24h-5v-9h-4v9Zm5-14h4v-8h-4Z"/></g>
+          <g fill="url(#umLet)" stroke="#0b0b0b" stroke-width=".55" stroke-linejoin="round"><path d="M16 9h5v23h4V9h5v28H16Z"/><path d="M32 21h7v4h-7Z"/><path d="M41 9h5l3 8 3-8h5v28h-5V19l-3 8-3-8v18h-5Z"/><path d="M60 37V13l4-4h6l4 4v24h-5v-9h-4v9Zm5-14h4v-8h-4Z"/></g>
+          <g fill="none" stroke="#fff" stroke-opacity=".22" stroke-width=".22" transform="translate(-.12,-.12)"><path d="M16 9h5v23h4V9h5v28H16Z"/><path d="M32 21h7v4h-7Z"/><path d="M41 9h5l3 8 3-8h5v28h-5V19l-3 8-3-8v18h-5Z"/><path d="M60 37V13l4-4h6l4 4v24h-5v-9h-4v9Zm5-14h4v-8h-4Z"/></g>
+        </g>
+        <rect x="164" y="444" width="100" height="102" rx="4" fill="url(#umM)" stroke="#111" stroke-width="6"/>
+        <rect x="273" y="444" width="100" height="102" rx="4" fill="url(#umC)" stroke="#111" stroke-width="6"/>
+        <rect x="382" y="444" width="100" height="102" rx="4" fill="url(#umY)" stroke="#111" stroke-width="6"/>
+        <g fill="#fff" opacity=".28"><rect x="172" y="451" width="84" height="12" rx="3"/><rect x="281" y="451" width="84" height="12" rx="3"/><rect x="390" y="451" width="84" height="12" rx="3"/></g>
+        <rect x="498" y="444" width="432" height="102" rx="3" fill="url(#umFace)" stroke="#111" stroke-width="6"/>
+        <text x="714" y="521" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-weight="700" font-size="74" fill="#111">サウンド</text>
+      </svg>
+
+  </div>
+  <div class="brand">
+    <b>Seq</b>
+    <i>U-MA / TOOL 04</i>
+  </div>
+  <div class="transport">
+    <button class="play" id="bPlay" data-it="t_play" aria-label="Play"><svg viewBox="0 0 16 16"><path class="ico-play" d="M4 2.5v11l9-5.5z"/><path class="ico-stop" d="M3.5 3.5h9v9h-9z"/></svg></button>
+    <button class="fill" id="bFill" data-it="t_fill_hint"><span data-i="t_fill">FILL</span></button>
+    <label class="num bpm"><span>BPM</span><input id="iBpm" type="number" min="40" max="240" value="118" inputmode="numeric"></label>
+    <label class="mini"><span data-i="t_swing">Swing</span><input id="iSwing" type="range" min="0" max="75" value="0"><em id="oSwing">0</em></label>
+  </div>
+  <div class="key">
+    <select id="sRoot" data-it="t_root" aria-label="Root"></select>
+    <select id="sScale" data-it="t_scale" aria-label="Scale"></select>
+  </div>
+  <canvas class="scope" id="scope" aria-hidden="true"></canvas>
+  <div class="tools">
+    <select id="sLang" aria-label="Language">
+      <option value="es">ES</option><option value="en">EN</option><option value="de">DE</option>
+      <option value="ja">日本語</option><option value="hi">हिन्दी</option><option value="zh">中文</option>
+    </select>
+    <button id="bNew" data-i="t_new">NEW</button>
+    <button id="bOpen" data-i="t_open">OPEN</button>
+    <button id="bSave" data-i="t_save">SAVE</button>
+    <button class="hot" id="bExport" data-i="t_export">EXPORT</button>
+    <button class="ic" id="bHelp" aria-label="?">?</button>
+    <input type="file" id="fOpen" accept=".json,application/json" hidden>
+  </div>
+</header>
+
+<main class="deck">
+  <aside class="tracks panel">
+    <div class="ph"><span data-i="p_tracks">TRACKS</span><button class="ic sm" id="bAddTrack" data-it="t_addtrack">+</button></div>
+    <div id="trackList"></div>
+  </aside>
+
+  <section class="stage panel">
+    <nav class="views">
+      <div class="seg" id="segView">
+        <button data-v="grid" data-i="v_grid">GRID</button>
+        <button data-v="roll" data-i="v_roll">ROLL</button>
+        <button data-v="lane" data-i="v_lane">LANE</button>
+        <button data-v="orbit" data-i="v_orbit">ORBIT</button>
+      </div>
+      <div class="seg layers" id="segLayer">
+        <button data-l="vel" class="c-cya" data-i="l_vel">VEL</button>
+        <button data-l="gate" class="c-sil" data-i="l_gate">GATE</button>
+        <button data-l="prob" class="c-yel" data-i="l_prob">PROB</button>
+        <button data-l="ratch" class="c-cya" data-i="l_ratch">RATCH</button>
+        <button data-l="micro" class="c-sil" data-i="l_micro">MICRO</button>
+        <button data-l="deg" class="c-mag" data-i="l_deg">NOTE</button>
+        <button data-l="pl" class="c-cya" data-i="l_pl">P-LOCK</button>
+        <button data-l="mod0" class="c-yel">MOD 1</button>
+        <button data-l="mod1" class="c-yel">MOD 2</button>
+      </div>
+      <div class="laneopts" id="laneOpts"></div>
+      <div class="seg tool" id="segTool">
+        <button data-t="trig" data-i="tool_trig" data-it="tool_trig_h">TRIG</button>
+        <button data-t="lock" data-i="tool_lock" data-it="tool_lock_h">LOCK</button>
+      </div>
+    </nav>
+    <div class="cvwrap" id="cvWrap">
+      <canvas id="cv"></canvas>
+      <div class="hud" id="hud"></div>
+    </div>
+    <div class="gen" id="gen">
+      <div class="gcore">
+        <button class="mutate" id="bMutate" data-it="g_mutate_h"><span data-i="g_mutate">MUTATE</span><em id="oAmt">30%</em></button>
+        <input id="iAmt" type="range" min="5" max="100" value="30" class="r-mag" data-it="g_amount">
+        <div class="gcol">
+          <button class="g-rand" id="bRandom" data-it="g_random_h"><span data-i="g_random">RANDOM</span><em id="oDen">40%</em></button>
+          <input id="iDen" type="range" min="5" max="100" value="40" class="r-yel" data-it="g_density">
+        </div>
+        <div class="gcol degs">
+          <span class="lbl" data-i="g_degrees">DEGREES</span>
+          <div class="chips" id="degChips"></div>
+          <div class="octr"><span data-i="g_octs">OCT</span><button data-o="1">1</button><button data-o="2">2</button><button data-o="3">3</button></div>
+        </div>
+        <div class="gcol eu">
+          <button class="g-eu" id="bEuclid" data-it="g_euclid_h"><span data-i="g_euclid">EUCLID</span><em id="oEu">4/16</em></button>
+          <div class="eur"><label><span data-i="g_pulses">K</span><input id="iEuK" type="range" min="0" max="16" value="4" class="r-yel"></label>
+          <label><span data-i="g_rot">ROT</span><input id="iEuR" type="range" min="0" max="15" value="0" class="r-cya"></label></div>
+        </div>
+        <div class="seg scope-sel" id="segScope">
+          <button data-s="track" data-i="g_track">TRACK</button>
+          <button data-s="all" data-i="g_all">ALL</button>
+        </div>
+      </div>
+      <div class="gops" id="gops">
+        <button data-op="invert" data-it="o_invert_h"><svg viewBox="0 0 20 20"><path d="M2 6h16M2 14h16M6 3l-3 3 3 3M14 11l3 3-3 3"/></svg><span data-i="o_invert">INV</span></button>
+        <button data-op="retro" data-it="o_retro_h"><svg viewBox="0 0 20 20"><path d="M17 10H3M7 5l-4 5 4 5"/></svg><span data-i="o_retro">RETRO</span></button>
+        <button data-op="rotL" data-it="o_rotl_h"><svg viewBox="0 0 20 20"><path d="M15 15a6 6 0 1 0-10-6M5 4v5h5"/></svg><span>ROT ←</span></button>
+        <button data-op="rotR" data-it="o_rotr_h"><svg viewBox="0 0 20 20"><path d="M5 15a6 6 0 1 1 10-6M15 4v5h-5"/></svg><span>ROT →</span></button>
+        <button data-op="dup" data-it="o_dup_h"><svg viewBox="0 0 20 20"><rect x="2" y="6" width="7" height="8"/><rect x="11" y="6" width="7" height="8"/></svg><span data-i="o_dup">DUP</span></button>
+        <button data-op="half" data-it="o_half_h"><svg viewBox="0 0 20 20"><path d="M2 10h6M12 10h6M8 6l3 4-3 4M12 6l-3 4 3 4"/></svg><span>½</span></button>
+        <button data-op="human" data-it="o_human_h"><svg viewBox="0 0 20 20"><path d="M2 12c2-6 3 4 5-2s3 5 5-1 3 3 6-2"/></svg><span data-i="o_human">HUMAN</span></button>
+        <button data-op="degDn" data-it="o_degdn_h"><svg viewBox="0 0 20 20"><path d="M10 3v14M5 12l5 5 5-5"/></svg><span data-i="o_deg">DEG</span></button>
+        <button data-op="degUp" data-it="o_degup_h"><svg viewBox="0 0 20 20"><path d="M10 17V3M5 8l5-5 5 5"/></svg><span data-i="o_deg">DEG</span></button>
+        <button data-op="octDn" data-it="o_octdn_h"><svg viewBox="0 0 20 20"><path d="M6 3v14M2 13l4 4 4-4M14 3v14M10 13l4 4 4-4"/></svg><span>OCT</span></button>
+        <button data-op="octUp" data-it="o_octup_h"><svg viewBox="0 0 20 20"><path d="M6 17V3M2 7l4-4 4 4M14 17V3M10 7l4-4 4 4"/></svg><span>OCT</span></button>
+        <button data-op="unlock" data-it="o_unlock_h"><svg viewBox="0 0 20 20"><rect x="4" y="9" width="12" height="9"/><path d="M7 9V6a3 3 0 0 1 6 0"/></svg><span data-i="o_unlock">UNLOCK</span></button>
+        <button data-op="clear" class="danger" data-it="o_clear_h"><svg viewBox="0 0 20 20"><path d="M4 4l12 12M16 4L4 16"/></svg><span data-i="o_clear">CLEAR</span></button>
+      </div>
+    </div>
+  </section>
+
+  <aside class="side">
+    <section class="panel insp" id="insp">
+      <div class="ph"><span data-i="p_step">STEP</span><b id="inspTitle">—</b></div>
+      <div id="inspBody"></div>
+    </section>
+    <section class="panel treebox">
+      <div class="ph"><span data-i="p_tree">VERSIONS</span>
+        <span class="ph-r"><button class="ic sm" id="bUndo" data-it="t_undo">↶</button><button class="ic sm" id="bRedo" data-it="t_redo">↷</button></span></div>
+      <div class="treewrap" id="treeWrap"><canvas id="tree"></canvas></div>
+      <div class="treeinfo" id="treeInfo"></div>
+    </section>
+  </aside>
+</main>
+
+<footer class="bank panel">
+  <div class="bk-l">
+    <div class="seg" id="segMode">
+      <button data-m="pattern" data-i="b_pattern">PATTERN</button>
+      <button data-m="song" data-i="b_song">SONG</button>
+    </div>
+    <div class="seg ab" id="segAB">
+      <button data-ab="A">A</button><button data-ab="B">B</button>
+    </div>
+    <button id="bAB" data-it="b_abcopy_h" data-i="b_abcopy">A→B</button>
+    <label class="mini"><span data-i="b_bars">BARS</span><select id="sBars"><option>1</option><option>2</option><option>4</option><option>8</option></select></label>
+  </div>
+  <div class="slots" id="slots"></div>
+  <div class="bk-r">
+    <button id="bCopy" data-i="b_copy">COPY</button>
+    <button id="bPaste" data-i="b_paste">PASTE</button>
+    <button id="bClrSlot" class="danger" data-i="b_clear">CLEAR</button>
+  </div>
+  <div class="chain" id="chainBox">
+    <span class="lbl" data-i="b_chain">CHAIN</span>
+    <div class="chainlist" id="chain"></div>
+    <button class="ic sm" id="bChainAdd" data-it="b_chainadd">+</button>
+  </div>
+</footer>
+</div>
+
+<div class="modal" id="mExport" hidden>
+  <div class="mbox">
+    <div class="mh"><b data-i="x_title">EXPORT</b><button class="ic" data-close>×</button></div>
+    <div class="seg" id="segX">
+      <button data-x="midi">MIDI</button><button data-x="json">JSON</button><button data-x="lua">LUA · norns</button><button data-x="text" data-i="x_text">TEXT</button><button data-x="live" data-i="x_live">LIVE MIDI</button>
+    </div>
+    <div class="xbody" id="xBody"></div>
+  </div>
+</div>
+
+<div class="modal" id="mHelp" hidden>
+  <div class="mbox help">
+    <div class="mh"><b>Seq · U-MA</b><button class="ic" data-close>×</button></div>
+    <div id="helpBody"></div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/i18n.js"></script>
+<script src="js/core.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/export.js"></script>
+<script src="js/ui.js"></script>
+</body>
+</html>
